@@ -20,19 +20,29 @@ public class Application {
 
         System.out.println("javaws is up and running!");
 
-        return args -> {
+        return new CommandLineRunner() {
 
-            for (String arg : args)
-                System.out.println(arg);
+            @Override
+            public void run(String...args) throws Exception {
+
+                for (String arg : args){
+
+                    System.out.println(arg);
+
+                }
+
+            }
 
         };
 
         /*
         return args -> {
 
-            System.out.println("Let's inspect the beans provided by Spring Boot:");
 
+
+            System.out.println("Let's inspect the beans provided by Spring Boot:");
             String[] beanNames = ctx.getBeanDefinitionNames();
+
             Arrays.sort(beanNames);
             for (String beanName : beanNames) {
                 System.out.println(beanName);
@@ -40,6 +50,7 @@ public class Application {
 
         };
         */
+
     }
 
 }
