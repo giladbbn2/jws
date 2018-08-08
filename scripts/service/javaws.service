@@ -5,11 +5,13 @@ StartLimitIntervalSec=0
 
 [Service]
 Type=simple
+User=ec2-user
 Restart=always
 RestartSec=1
 ExecStart=/var/www/html/scripts/service/start.sh
 ExecStop=/var/www/html/scripts/service/stop.sh
 ExecReload=/var/www/html/scripts/service/start.sh
+
 
 [Install]
 WantedBy=multi-user.target
