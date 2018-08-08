@@ -17,6 +17,10 @@ public class Application {
 
     @Bean
     public CommandLineRunner commandLineRunner(ApplicationContext ctx) {
+
+        System.out.println("javaws is up and running!");
+
+        /*
         return args -> {
 
             System.out.println("Let's inspect the beans provided by Spring Boot:");
@@ -28,6 +32,7 @@ public class Application {
             }
 
         };
+        */
     }
 
 }
