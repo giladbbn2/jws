@@ -15,4 +15,5 @@ sudo wget --header "Cookie: oraclelicense=accept-securebackup-cookie" http://dow
 sudo rpm -ivh jdk-10.0.2_linux-x64_bin.rpm
 
 sudo cp /var/www/html/scripts/service/javaws.service /lib/systemd/system/javaws.service
+sudo systemctl daemon-reload
 
