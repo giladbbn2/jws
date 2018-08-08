@@ -7,9 +7,10 @@ StartLimitIntervalSec=0
 Type=simple
 Restart=always
 RestartSec=1
-ExecStart=/var/www/html/scripts/start_server.sh
-ExecStop=/var/www/html/scripts/stop_server.sh
-ExecReload=/var/www/html/scripts/start_server.sh
+ExecStartPre=/var/www/html/scripts/service/build.sh
+ExecStart=/var/www/html/scripts/service/start.sh
+ExecStop=/var/www/html/scripts/service/stop.sh
+ExecReload=/var/www/html/scripts/service/start.sh
 
 [Install]
 WantedBy=multi-user.target
