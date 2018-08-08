@@ -20,6 +20,8 @@ public class Application {
 
         System.out.println("javaws is up and running!");
 
+        return;
+
         /*
         return args -> {
 
