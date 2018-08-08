@@ -18,8 +18,6 @@ public class Application {
     @Bean
     public CommandLineRunner commandLineRunner(ApplicationContext ctx) {
 
-        System.out.println("javaws is up and running1!");
-
         return new CommandLineRunner() {
 
             @Override
@@ -34,8 +32,6 @@ public class Application {
             }
 
         };
-
-        System.out.println("javaws is up and running2!");
 
         /*
         return args -> {
