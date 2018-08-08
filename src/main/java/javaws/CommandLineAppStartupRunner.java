@@ -8,7 +8,6 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
 
 @Component
-
 public class CommandLineAppStartupRunner implements CommandLineRunner {
 
     //private static final Logger logger = LoggerFactory.getLogger(CommandLineAppStartupRunner.class);
