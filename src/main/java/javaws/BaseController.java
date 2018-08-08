@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 public class BaseController {
 
     @RequestMapping("/ws/{wspath}")
-    public String index(@PathVariable String wspath) {
+    public String index(@PathVariable String wspath, HttpServletResponse response) {
 
         return wspath;
 
