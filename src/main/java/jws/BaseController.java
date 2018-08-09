@@ -1,4 +1,4 @@
-package javaws;
+package jws;
 
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -11,11 +11,9 @@ import javax.servlet.http.HttpServletResponse;
 public class BaseController {
 
     @RequestMapping("/ws/{wspath}")
-    public String request(@PathVariable String wspath, HttpServletRequest request, HttpServletResponse response) {
+    public String handleWebserviceRequest(@PathVariable String wspath, HttpServletRequest request, HttpServletResponse response) {
 
-        return wspath;
-
-        // pass control to MainController
+        return null;
 
     }
 

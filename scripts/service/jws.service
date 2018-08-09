@@ -1,5 +1,5 @@
 [Unit]
-Description=javaws service
+Description=jws service
 After=network.target
 StartLimitIntervalSec=0
 

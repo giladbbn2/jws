@@ -1,4 +1,4 @@
-package javaws;
+package jws;
 
 import java.util.Arrays;
 

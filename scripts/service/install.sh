@@ -14,6 +14,6 @@ cd /usr/java
 sudo wget --header "Cookie: oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/10.0.2+13/19aef61b38124481863b1413dce1855f/jdk-10.0.2_linux-x64_bin.rpm
 sudo rpm -ivh jdk-10.0.2_linux-x64_bin.rpm
 
-sudo cp /var/www/html/scripts/service/javaws.service /lib/systemd/system/javaws.service
+sudo cp /var/www/html/scripts/service/jws.service /lib/systemd/system/jws.service
 sudo systemctl daemon-reload
 
