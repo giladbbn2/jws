@@ -12,12 +12,22 @@ import org.springframework.context.annotation.Bean;
 public class Application {
 
     public static void main(String[] args) {
+
         SpringApplication.run(Application.class, args);
+
     }
 
     @Bean
     public CommandLineRunner commandLineRunner(ApplicationContext ctx) {
 
+        return new CommandLineRunner() {
+            @Override
+            public void run(String... args) throws Exception {
+
+            }
+        };
+
+        /*
         return new CommandLineRunner() {
 
             @Override
@@ -33,7 +43,6 @@ public class Application {
 
         };
 
-        /*
         return args -> {
 
 
