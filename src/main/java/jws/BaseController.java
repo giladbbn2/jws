@@ -17,11 +17,4 @@ public class BaseController {
 
     }
 
-    @RequestMapping("/admin/{path}")
-    public String handleAdminStatus(HttpServletRequest request, HttpServletResponse response) {
-
-        return null;
-
-    }
-
 }
