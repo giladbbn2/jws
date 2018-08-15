@@ -38,4 +38,5 @@ public_html/include/GeoIP.dat
 .gitconfig
 cronlog.txt
 target/*
-pid.txt
+.classpath
+.settings/*
